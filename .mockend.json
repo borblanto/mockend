@@ -2,7 +2,7 @@
   "Product": {
     "name": { "regexp": "[A-Z][a-z]{5,20}" },
     "category": { "string": ["Ropa", "Verduras", "otros" ] },
-    "prize": { "number": {} },
+    "prize": { "int": { "min": 1, "max": 1000 } },
     "numStockItems": { "int": { "min": 0, "max": 1000000 } },
   }
 }
