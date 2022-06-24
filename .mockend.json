@@ -1,14 +1,8 @@
 {
-  "Post": {
-    "title": { "string": {} },
-    "comments": {
-      "hasMany": "Comment"
-    }
-  },
-  "Comment": {
-    "body": { "string": {} },
-    "post": {
-      "belongsTo": "Post"
-    }
+  "Product": {
+    "name": { "regexp": "[A-Z][a-z]{5,20}" },
+    "category": { "string": ["Ropa", "Verduras", "otros" ] },
+    "prize": { "number": {} },
+    "numStockItems": { "int": { "min": 0, "max": 1000000 } },
   }
 }
